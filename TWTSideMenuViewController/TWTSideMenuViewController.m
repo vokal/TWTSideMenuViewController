@@ -65,7 +65,8 @@ static NSTimeInterval const kDefaultSwapAnimationClosedDuration = 0.35;
 {
     self.animationDuration = kDefaultAnimationDuration;
     self.animationType = TWTSideMenuAnimationTypeSlideOver;
-    
+    self.animationSwapDuration = kDefaultSwapAnimationDuration;
+
     [self addViewController:self.menuViewController];
     [self addViewController:self.mainViewController];
 }
@@ -88,11 +89,7 @@ static NSTimeInterval const kDefaultSwapAnimationClosedDuration = 0.35;
     [self addChildViewController:self.menuViewController];
     [self.view insertSubview:self.menuViewController.view belowSubview:self.containerView];
     [self.menuViewController didMoveToParentViewController:self];
-}
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
     [self updateMenuViewWithTransform:[self closeTransformForMenuView]];
 }
 
@@ -152,16 +149,21 @@ static NSTimeInterval const kDefaultSwapAnimationClosedDuration = 0.35;
 
 #pragma mark - Status Bar management
 
-- (UIStatusBarStyle)preferredStatusBarStyle
+- (UIViewController *)childViewControllerForStatusBarStyle
 {
-    if ([self respondsToSelector:@selector(preferredStatusBarStyle)]) {
-        if (self.open) {
-            return self.menuViewController.preferredStatusBarStyle;
-        } else {
-            return self.mainViewController.preferredStatusBarStyle;
-        }
+    if (self.open) {
+        return self.menuViewController;
     } else {
-        return UIStatusBarStyleDefault;
+        return self.mainViewController;
+    }
+}
+
+- (UIViewController *)childViewControllerForStatusBarHidden
+{
+    if (self.open) {
+        return self.menuViewController;
+    } else {
+        return self.mainViewController;
     }
 }
 
@@ -200,6 +202,11 @@ static NSTimeInterval const kDefaultSwapAnimationClosedDuration = 0.35;
     if (self.open) {
         return;
     }
+    
+    if ([self.delegate respondsToSelector:@selector(sideMenuViewControllerWillOpenMenu:)]) {
+	    [self.delegate sideMenuViewControllerWillOpenMenu:self];
+    }
+    
     self.open = YES;
     self.menuViewController.view.transform = [self closeTransformForMenuView];
 
@@ -211,6 +218,10 @@ static NSTimeInterval const kDefaultSwapAnimationClosedDuration = 0.35;
     void (^openCompleteBlock)(BOOL) = ^(BOOL finished) {
         if (finished) {
             [self addOverlayButtonToMainViewController];
+        }
+        
+        if ([self.delegate respondsToSelector:@selector(sideMenuViewControllerDidOpenMenu:)]) {
+	        [self.delegate sideMenuViewControllerDidOpenMenu:self];
         }
         
         if (completion) {
@@ -239,6 +250,11 @@ static NSTimeInterval const kDefaultSwapAnimationClosedDuration = 0.35;
     if (!self.open) {
         return;
     }
+    
+    if ([self.delegate respondsToSelector:@selector(sideMenuViewControllerWillCloseMenu:)]) {
+	    [self.delegate sideMenuViewControllerWillCloseMenu:self];
+    }
+    
     self.open = NO;
     
     [self removeOverlayButtonFromMainViewController];
@@ -254,6 +270,10 @@ static NSTimeInterval const kDefaultSwapAnimationClosedDuration = 0.35;
         }
         self.menuViewController.view.transform = CGAffineTransformIdentity;
 
+        if ([self.delegate respondsToSelector:@selector(sideMenuViewControllerDidCloseMenu:)]) {
+	        [self.delegate sideMenuViewControllerDidCloseMenu:self];
+        }
+        
         if (completion) {
             completion(finished);
         }
@@ -294,7 +314,7 @@ static NSTimeInterval const kDefaultSwapAnimationClosedDuration = 0.35;
     animation.duration = kDefaultAnimationDuration;
     [overlayView.layer addAnimation:animation forKey:@"opacity"];
     
-    NSTimeInterval changeTimeInterval = kDefaultSwapAnimationDuration;
+    NSTimeInterval changeTimeInterval = self.animationSwapDuration;
     NSTimeInterval delayInterval = kDefaultAnimationDelayDuration;
     if (!self.open) {
         changeTimeInterval = kDefaultSwapAnimationClosedDuration;

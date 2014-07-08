@@ -14,19 +14,19 @@
 		A4485E6E17BBCA75002B32C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4485E6C17BBCA75002B32C4 /* InfoPlist.strings */; };
 		A4485E7017BBCA75002B32C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4485E6F17BBCA75002B32C4 /* main.m */; };
 		A4485E7417BBCA75002B32C4 /* TWTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4485E7317BBCA75002B32C4 /* TWTAppDelegate.m */; };
-		A4485E7D17BBCA75002B32C4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4485E7C17BBCA75002B32C4 /* XCTest.framework */; };
-		A4485E7E17BBCA75002B32C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4485E6317BBCA75002B32C4 /* Foundation.framework */; };
-		A4485E7F17BBCA75002B32C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4485E6717BBCA75002B32C4 /* UIKit.framework */; };
-		A4485E8717BBCA75002B32C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4485E8517BBCA75002B32C4 /* InfoPlist.strings */; };
-		A4485E8917BBCA75002B32C4 /* TWTSideMenuViewController_SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4485E8817BBCA75002B32C4 /* TWTSideMenuViewController_SampleTests.m */; };
 		A45D359417BBDF6B00BEF872 /* TWTSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A45D359317BBDF6B00BEF872 /* TWTSideMenuViewController.m */; };
 		A495C4D717BC109600B880E4 /* TWTMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A495C4D617BC109600B880E4 /* TWTMenuViewController.m */; };
 		A495C4DA17BC109F00B880E4 /* TWTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A495C4D917BC109F00B880E4 /* TWTMainViewController.m */; };
 		A495C4DC17BC11F500B880E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A495C4DB17BC11F500B880E4 /* Images.xcassets */; };
+		A4CBEDF318890683000A1EB1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4485E7C17BBCA75002B32C4 /* XCTest.framework */; };
+		A4CBEDF418890683000A1EB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4485E6317BBCA75002B32C4 /* Foundation.framework */; };
+		A4CBEDF518890683000A1EB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4485E6717BBCA75002B32C4 /* UIKit.framework */; };
+		A4CBEDFB18890683000A1EB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4CBEDF918890683000A1EB1 /* InfoPlist.strings */; };
+		A4CBEDFD18890683000A1EB1 /* TWTSideMenuViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CBEDFC18890683000A1EB1 /* TWTSideMenuViewControllerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A4485E8017BBCA75002B32C4 /* PBXContainerItemProxy */ = {
+		A4CBEDFF18890683000A1EB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A4485E5817BBCA75002B32C4 /* Project object */;
 			proxyType = 1;
@@ -47,11 +47,7 @@
 		A4485E7117BBCA75002B32C4 /* TWTSideMenuViewController-Sample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TWTSideMenuViewController-Sample-Prefix.pch"; sourceTree = "<group>"; };
 		A4485E7217BBCA75002B32C4 /* TWTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWTAppDelegate.h; sourceTree = "<group>"; };
 		A4485E7317BBCA75002B32C4 /* TWTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWTAppDelegate.m; sourceTree = "<group>"; };
-		A4485E7B17BBCA75002B32C4 /* TWTSideMenuViewController-SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TWTSideMenuViewController-SampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4485E7C17BBCA75002B32C4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		A4485E8417BBCA75002B32C4 /* TWTSideMenuViewController-SampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TWTSideMenuViewController-SampleTests-Info.plist"; sourceTree = "<group>"; };
-		A4485E8617BBCA75002B32C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A4485E8817BBCA75002B32C4 /* TWTSideMenuViewController_SampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWTSideMenuViewController_SampleTests.m; sourceTree = "<group>"; };
 		A45D359217BBDF6B00BEF872 /* TWTSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTSideMenuViewController.h; sourceTree = "<group>"; };
 		A45D359317BBDF6B00BEF872 /* TWTSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTSideMenuViewController.m; sourceTree = "<group>"; };
 		A495C4D517BC109600B880E4 /* TWTMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTMenuViewController.h; sourceTree = "<group>"; };
@@ -59,6 +55,11 @@
 		A495C4D817BC109F00B880E4 /* TWTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTMainViewController.h; sourceTree = "<group>"; };
 		A495C4D917BC109F00B880E4 /* TWTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTMainViewController.m; sourceTree = "<group>"; };
 		A495C4DB17BC11F500B880E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A4CBEDF218890683000A1EB1 /* TWTSideMenuViewController-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TWTSideMenuViewController-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4CBEDF818890683000A1EB1 /* TWTSideMenuViewController-Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TWTSideMenuViewController-Tests-Info.plist"; sourceTree = "<group>"; };
+		A4CBEDFA18890683000A1EB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4CBEDFC18890683000A1EB1 /* TWTSideMenuViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWTSideMenuViewControllerTests.m; sourceTree = "<group>"; };
+		A4CBEDFE18890683000A1EB1 /* TWTSideMenuViewController-Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TWTSideMenuViewController-Tests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,13 +73,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4485E7817BBCA75002B32C4 /* Frameworks */ = {
+		A4CBEDEF18890683000A1EB1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4485E7D17BBCA75002B32C4 /* XCTest.framework in Frameworks */,
-				A4485E7F17BBCA75002B32C4 /* UIKit.framework in Frameworks */,
-				A4485E7E17BBCA75002B32C4 /* Foundation.framework in Frameworks */,
+				A4CBEDF318890683000A1EB1 /* XCTest.framework in Frameworks */,
+				A4CBEDF518890683000A1EB1 /* UIKit.framework in Frameworks */,
+				A4CBEDF418890683000A1EB1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +91,7 @@
 			children = (
 				A45D358F17BBDD0F00BEF872 /* TWTSideMenuViewController */,
 				A4485E6917BBCA75002B32C4 /* TWTSideMenuViewController-Sample */,
-				A4485E8217BBCA75002B32C4 /* TWTSideMenuViewController-SampleTests */,
+				A4CBEDF618890683000A1EB1 /* TWTSideMenuViewController-Tests */,
 				A4485E6217BBCA75002B32C4 /* Frameworks */,
 				A4485E6117BBCA75002B32C4 /* Products */,
 			);
@@ -100,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				A4485E6017BBCA75002B32C4 /* TWTSideMenuViewController-Sample.app */,
-				A4485E7B17BBCA75002B32C4 /* TWTSideMenuViewController-SampleTests.xctest */,
+				A4CBEDF218890683000A1EB1 /* TWTSideMenuViewController-Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,24 +144,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A4485E8217BBCA75002B32C4 /* TWTSideMenuViewController-SampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				A4485E8817BBCA75002B32C4 /* TWTSideMenuViewController_SampleTests.m */,
-				A4485E8317BBCA75002B32C4 /* Supporting Files */,
-			);
-			path = "TWTSideMenuViewController-SampleTests";
-			sourceTree = "<group>";
-		};
-		A4485E8317BBCA75002B32C4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A4485E8417BBCA75002B32C4 /* TWTSideMenuViewController-SampleTests-Info.plist */,
-				A4485E8517BBCA75002B32C4 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		A45D358F17BBDD0F00BEF872 /* TWTSideMenuViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +151,25 @@
 				A45D359317BBDF6B00BEF872 /* TWTSideMenuViewController.m */,
 			);
 			path = TWTSideMenuViewController;
+			sourceTree = "<group>";
+		};
+		A4CBEDF618890683000A1EB1 /* TWTSideMenuViewController-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A4CBEDFC18890683000A1EB1 /* TWTSideMenuViewControllerTests.m */,
+				A4CBEDF718890683000A1EB1 /* Supporting Files */,
+			);
+			path = "TWTSideMenuViewController-Tests";
+			sourceTree = "<group>";
+		};
+		A4CBEDF718890683000A1EB1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4CBEDF818890683000A1EB1 /* TWTSideMenuViewController-Tests-Info.plist */,
+				A4CBEDF918890683000A1EB1 /* InfoPlist.strings */,
+				A4CBEDFE18890683000A1EB1 /* TWTSideMenuViewController-Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,22 +192,22 @@
 			productReference = A4485E6017BBCA75002B32C4 /* TWTSideMenuViewController-Sample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A4485E7A17BBCA75002B32C4 /* TWTSideMenuViewController-SampleTests */ = {
+		A4CBEDF118890683000A1EB1 /* TWTSideMenuViewController-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A4485E8F17BBCA75002B32C4 /* Build configuration list for PBXNativeTarget "TWTSideMenuViewController-SampleTests" */;
+			buildConfigurationList = A4CBEE0118890683000A1EB1 /* Build configuration list for PBXNativeTarget "TWTSideMenuViewController-Tests" */;
 			buildPhases = (
-				A4485E7717BBCA75002B32C4 /* Sources */,
-				A4485E7817BBCA75002B32C4 /* Frameworks */,
-				A4485E7917BBCA75002B32C4 /* Resources */,
+				A4CBEDEE18890683000A1EB1 /* Sources */,
+				A4CBEDEF18890683000A1EB1 /* Frameworks */,
+				A4CBEDF018890683000A1EB1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A4485E8117BBCA75002B32C4 /* PBXTargetDependency */,
+				A4CBEE0018890683000A1EB1 /* PBXTargetDependency */,
 			);
-			name = "TWTSideMenuViewController-SampleTests";
-			productName = "TWTSideMenuViewController-SampleTests";
-			productReference = A4485E7B17BBCA75002B32C4 /* TWTSideMenuViewController-SampleTests.xctest */;
+			name = "TWTSideMenuViewController-Tests";
+			productName = "TWTSideMenuViewController-Tests";
+			productReference = A4CBEDF218890683000A1EB1 /* TWTSideMenuViewController-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -218,7 +220,7 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Two Toasters";
 				TargetAttributes = {
-					A4485E7A17BBCA75002B32C4 = {
+					A4CBEDF118890683000A1EB1 = {
 						TestTargetID = A4485E5F17BBCA75002B32C4;
 					};
 				};
@@ -236,7 +238,7 @@
 			projectRoot = "";
 			targets = (
 				A4485E5F17BBCA75002B32C4 /* TWTSideMenuViewController-Sample */,
-				A4485E7A17BBCA75002B32C4 /* TWTSideMenuViewController-SampleTests */,
+				A4CBEDF118890683000A1EB1 /* TWTSideMenuViewController-Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -252,11 +254,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4485E7917BBCA75002B32C4 /* Resources */ = {
+		A4CBEDF018890683000A1EB1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4485E8717BBCA75002B32C4 /* InfoPlist.strings in Resources */,
+				A4CBEDFB18890683000A1EB1 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,21 +277,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4485E7717BBCA75002B32C4 /* Sources */ = {
+		A4CBEDEE18890683000A1EB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4485E8917BBCA75002B32C4 /* TWTSideMenuViewController_SampleTests.m in Sources */,
+				A4CBEDFD18890683000A1EB1 /* TWTSideMenuViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A4485E8117BBCA75002B32C4 /* PBXTargetDependency */ = {
+		A4CBEE0018890683000A1EB1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A4485E5F17BBCA75002B32C4 /* TWTSideMenuViewController-Sample */;
-			targetProxy = A4485E8017BBCA75002B32C4 /* PBXContainerItemProxy */;
+			targetProxy = A4CBEDFF18890683000A1EB1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -302,10 +304,10 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		A4485E8517BBCA75002B32C4 /* InfoPlist.strings */ = {
+		A4CBEDF918890683000A1EB1 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A4485E8617BBCA75002B32C4 /* en */,
+				A4CBEDFA18890683000A1EB1 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -411,9 +413,10 @@
 			};
 			name = Release;
 		};
-		A4485E9017BBCA75002B32C4 /* Debug */ = {
+		A4CBEE0218890683000A1EB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TWTSideMenuViewController-Sample.app/TWTSideMenuViewController-Sample";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -421,21 +424,24 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TWTSideMenuViewController-Sample/TWTSideMenuViewController-Sample-Prefix.pch";
+				GCC_PREFIX_HEADER = "TWTSideMenuViewController-Tests/TWTSideMenuViewController-Tests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "TWTSideMenuViewController-SampleTests/TWTSideMenuViewController-SampleTests-Info.plist";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "TWTSideMenuViewController-Tests/TWTSideMenuViewController-Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
-		A4485E9117BBCA75002B32C4 /* Release */ = {
+		A4CBEE0318890683000A1EB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TWTSideMenuViewController-Sample.app/TWTSideMenuViewController-Sample";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -443,8 +449,10 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TWTSideMenuViewController-Sample/TWTSideMenuViewController-Sample-Prefix.pch";
-				INFOPLIST_FILE = "TWTSideMenuViewController-SampleTests/TWTSideMenuViewController-SampleTests-Info.plist";
+				GCC_PREFIX_HEADER = "TWTSideMenuViewController-Tests/TWTSideMenuViewController-Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "TWTSideMenuViewController-Tests/TWTSideMenuViewController-Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -472,14 +480,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A4485E8F17BBCA75002B32C4 /* Build configuration list for PBXNativeTarget "TWTSideMenuViewController-SampleTests" */ = {
+		A4CBEE0118890683000A1EB1 /* Build configuration list for PBXNativeTarget "TWTSideMenuViewController-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A4485E9017BBCA75002B32C4 /* Debug */,
-				A4485E9117BBCA75002B32C4 /* Release */,
+				A4CBEE0218890683000A1EB1 /* Debug */,
+				A4CBEE0318890683000A1EB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

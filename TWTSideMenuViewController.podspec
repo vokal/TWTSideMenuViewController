@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TWTSideMenuViewController"
-  s.version      = "0.1"
+  s.version      = "0.3"
   s.summary      = "Side Menus for iOS 7."
 
   s.description  = <<-DESC
@@ -20,7 +20,9 @@ Pod::Spec.new do |s|
    s.platform     = :ios
    s.platform     = :ios, '6.0'
 
-  s.source       = { :git => "https://github.com/twotoasters/TWTSideMenuViewController.git", :tag => "v0.1" }
+  s.source       = { :git => "https://github.com/twotoasters/TWTSideMenuViewController.git", :tag => "v0.3" }
 
   s.source_files  = 'TWTSideMenuViewController'
+
+  s.requires_arc = true
 end
